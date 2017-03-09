@@ -90,7 +90,7 @@ MSE.KNN
 plot(x , y , col = "green" , pch = 1 , title("Epanechnikov Kernel smoother"))
 points(x.test , y.test , type = "l" , col = "blue")
 points(x.test , y.predict.EKS , col = "red" , type = "l")
-legend("topright" , legend = c("True Function" , "Mean Smoother Estimator") , col = c("blue" , "red"),lty=1,lwd=2,cex=.8)
+legend("topright" , legend = c("True Function" , "Epanechnikov Kernel Estimator") , col = c("blue" , "red"),lty=1,lwd=2,cex=.8)
 MSE.EKS <- sum((y.predict.EKS - y.test)^2)/length(y.predict.EKS)
 MSE.EKS
 
